@@ -1,0 +1,401 @@
+:root
+{
+    --dark-jungle-green:hsl(188,63%,7%);
+    --prussiant-blue:hsl(200,69%,14%);
+    --raisin-black-1: hsl(277,29%,13%);
+    --raisin-black-2: hsl(229,17%,19%);
+    --yellow-green:#76c520;
+    --orange-soda:hsl(9,100%,62%);
+    --cultured-1:hsl(0,0%,93%); 
+    --cultured-2:hsl(192,24%,96%);
+    --mistry-rose:hsl(7,56%,91%);
+    --alice-blue:hsl(210,100%,97%);
+    --seashell:hsl(8,100%,97%);
+    --cadet:hsl(0, 0%, 40%);
+    --white:hsl(0,0%,100%);
+    --black: hsl(0,0%,0%);
+    --opal:hsl(180,20%,62%);
+    --special:rgb(1, 103, 74);
+    --special2:rgb(#e9e9e9);
+    --trans: rgb(230, 242, 252);
+    --text-color:#000000;
+    --main-colo:#83B735;
+    --main-color:#05ac3f;
+
+
+    /*
+    typographie*/
+
+    --ff-nunito-sans: "Nunito Sans",sans-seriif;
+    --ff-poppins: "Poppins",sans-serif;
+
+    /* transition */
+
+    --transition: 0.25s ease ;
+
+
+}
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+section
+{
+    padding: 50px 10%;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index:1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    background: #edecea;
+}
+
+.logo 
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.logo span 
+{
+    color: var(--main-color);
+}
+
+.navbar 
+{
+    position: relative;
+    display: flex;
+}
+
+.navbar a 
+{
+    font-size: 1rem;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.navbar a:hover 
+{
+    color: var(--main-color);
+}
+
+#menu-icon 
+{
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home 
+{
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background: linear-gradient(rgb(0,0,0,0.60), rgb(0,0,0,0.50)), url(img/img2.jpg) center center fixed no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.home-text h1 
+{
+    font-size: 2.7rem;
+    color: white;
+
+}
+
+.home-text p 
+{
+    font-size: 0.938rem;
+    margin: 0.4rem 0 1.8rem;
+    color: white;
+
+}
+
+.home-text span 
+{
+    color: var(--main-color);
+}
+
+.btn 
+{
+    padding:  10px 14px;
+    background: var(--main-color);
+    color: white;
+    border-radius: 0.3rem;
+    font-size: 14px;
+}
+
+.btn:hover 
+{
+    background: var(--main-colo);
+}
+
+.shop-content, 
+.new-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+.heading 
+{
+    text-align: center;
+}
+.heading span
+{
+    color: var(--main-color);
+}
+
+.box 
+{
+    position: relative;
+    box-shadow: 1px 4px 4px rgb(0,0,0,0.1);
+    border-radius: 44px 4px 4px 4px;
+}
+
+.box .box-img
+{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 44px 4px 0 0 ;
+    object-fit: cover;
+}
+
+.box .box-img img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.box .box-img img:hover 
+{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.title-price 
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.title-price h3 
+{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.box span 
+{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 12px;
+    color: var(--main-color);
+}
+ .stars .bx 
+ {
+    color: var(--main-color);
+ }
+
+ .box .cart 
+ {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 4px 0 4px 0;
+    background: var(--main-color);
+ }
+
+ .box .cart:hover 
+ {
+    background: #83B735;
+ }
+
+.new-container .box 
+{
+    border-radius: 4px;
+}
+
+.new-container .box .box-img
+{
+    border-radius: 4px;
+}
+.newsletter
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.newsletter h2 
+{
+    color: white;
+}
+
+.news-box 
+{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.news-box input 
+{
+    width: 260px;
+    height: 44px;
+    border: none;
+    background: #fff;
+    outline: none;
+    padding: 10px;
+}
+
+.news-box .btn 
+{
+    height: 44px;
+    padding: 14px;
+    margin-left: -20px;
+    border-radius: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.footer 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    gap: 1rem;
+}
+
+.footer-box h2 
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* resposive */
+
+@media (max-width:991px){
+    header 
+    {
+        padding: 18px 4%;
+    }
+
+    section 
+    {
+        padding: 50px 4%;
+    }
+}
+
+
+
+@media (max-width:881px){
+    .home-text h1 
+    {
+        font-size: 2rem;
+    }
+
+    .shop-content,
+    .new-container
+    {
+        grid-template-columns: repeat(auto-fit, minmax(218px, auto));
+    }
+}
+
+
+@media (max-width:768px){
+    header 
+    {
+        padding: 11px 4%;
+    }
+    #menu-icon 
+    {
+        display: initial;
+    }
+
+    header .navbar 
+    {
+        position: absolute;
+        top: -500px;
+        left:0 ;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rgb(0 0 0 /10%);
+        transition: 0.2s ease;
+        text-align: center;
+     }
+
+     .navbar a 
+     {
+        padding: 1.5rem;
+        display: block;
+     }
+
+     .navbar.active 
+     {
+        top: 100%;
+     }
+
+     .navbar a:hover 
+     {
+        background: var(--main-color);
+        color: white;
+     }
+
+}
+
+@media (max-width:491px){
+    .home-text h1 
+    {
+        font-size: 1.5rem;
+    }
+
+    .shop-content,
+    .new-container
+    {
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
+
+    .box .box-img 
+    {
+        height: 300px;
+    }
+
+    .news-box input 
+    {
+        width: 180px;
+    }
+
+    .about-text h2 
+    {
+        font-size: 1.2rem;
+    }
+}
